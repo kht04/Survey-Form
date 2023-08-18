@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Vina+Sans&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+
+    <form id="survey-form">
+
+      <div class= "ans input">
+
+        <label for="name" id="name-label">
+          Name 
+          <input type="text" id="name" name="name" required placeholder="Enter your name"/>
+        </label>
+
+        <label for="email" id="email-label">
+          Email 
+          <input type="email" id="email" name="email" required placeholder="Enter your Email" />
+        </label>
+
+        <label for="number" id="number-label"> 
+          Age(optional) 
+          <input type="number" name="number" id="number"min=10 max=99 placeholder="Age"/>
+        </label>
+
+        <label for="gender">
+          Gender
+          <select id="dropdown" name="gender">
+            <option disabled selected value id="S1">(Select One)</option>
+            <option value="m">Male</option>
+            <option value="fe">Female</option>
+            <option value="other">Other</option>
+            <option value="nth">Prefer not to say</option>
+          </select>
+        </label>
+
+      </div>
+
+      <div class= "ans recommend">
+        <p>Would you recommend this website to a friend?</p>
+        <label><input type="radio" id="definitely" name="recommend"> Definitely </label>
+        <label><input type="radio" id="maybe" name="recommend"> Maybe </label>
+        <label><input type="radio" id="not-sure" name="recommend"> Not Sure </label>
+      </div>
+
+      <div class= "ans favGenre">
+        <p>What's your favorite movie genre(s)? Click all that apply.</p>
+        
+        <label for="favGenre"><input type="checkbox" value="Action"> Action </label>
+        <label for="favGenre"><input type="checkbox" value="Drama"> Drama </label>
+        <label for="favGenre"><input type="checkbox" value="Comedy"> Comedy </label>
+        <label for="favGenre"><input type="checkbox" value="Horror"> Horror </label>
+        <label for="favGenre"><input type="checkbox" value="Romance"> Romance </label>
+        <label for="favGenre"><input type="checkbox" value="Sci-fi"> Sci-fi </label>
+        <label for="favGenre"><input type="checkbox" value="Fantasy"> Fantasy </label>
+        <label for="favGenre"><input type="checkbox" value="Documentary"> Documentary </label>        
+
+      </div>
+      <div class= "ans feedback">
+        <p>Any comments or suggestions?</p>
+        <textarea name="feedback" id="feedback" placeholder="Enter your comment here.."></textarea>
+      </div>
+
+      <div class= "ans submit">
+        <button type="submit" id="submit" name="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
